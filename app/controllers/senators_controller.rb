@@ -24,7 +24,8 @@ class SenatorsController < ApplicationController
   end
 
   def show
-
+    @senator = Senator.find(params[:id])
+    render :show
   end
 
 end
