@@ -1,0 +1,9 @@
+<h1>Hello</h1>
+
+<%= form_tag senators_path, :method => :post do %>
+  <%= label_tag :zipcode %>
+  <%= text_field_tag :zipcode %>
+
+
+  <%= submit_tag "Search" %>
+<% end %>
