@@ -6,7 +6,6 @@ class SenatorsController < ApplicationController
   end
 
   def create
-    Congress.key = 'df5394c089794f19ae950ce2aca1b096'
     @district = Congress.legislators_locate(params[:zipcode])
     @district_sen = @district["results"].select {|leg| leg["title"] == "Sen" && leg["state_rank"] == "senior"}
     @first_name = @district_sen[0]['first_name']
@@ -14,6 +13,10 @@ class SenatorsController < ApplicationController
     @phone = @district_sen[0]['phone']
     @website = @district_sen[0]['website']
     @twitter_id = @district_sen[0]['twitter_id']
+
+    # @my_congress = Congress.legislators
+    # @my_senator = @my_congress["results"].select {|leg| leg["first_name"] == @first_name && leg["last_name"] == @last_name}
+    # @
 
     @senator = Senator.create(first_name: @first_name, last_name: @last_name, phone: @phone, website: @website, twitter_id: @twitter_id)
 
