@@ -1,8 +1,8 @@
 <h1>Hello</h1>
 
 
-<%= form_tag senator_path(@senator), :method => :get do %>
-<!--    select_tag :state %> -->
+<%= form_tag search_senators_path, :method => :get do %>
   <%= text_field_tag :search, params[:search] %>
   <%= submit_tag "Search" %>
-<% end %> 
+<% end %>
+
