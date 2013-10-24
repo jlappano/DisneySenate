@@ -4,8 +4,9 @@ body{
 
 p, li{
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.2em;
+  padding-right: 30px;
+  padding-left: 30px;
 
 }
 
@@ -18,9 +19,21 @@ li {
 }
 
 img {
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 a {
   font-size: 1.2em;
+}
+
+span {
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.3em; 
+}
+
+.votes {
+  text-align: left;
 }
