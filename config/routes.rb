@@ -1,6 +1,5 @@
 DisneySenate::Application.routes.draw do
  
-  resources :disney_characters
   resources :senators do
     collection do
       get 'search'
