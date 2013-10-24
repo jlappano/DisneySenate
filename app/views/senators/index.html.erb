@@ -1,0 +1,11 @@
+<h1>Hello</h1>
+
+<%= form_tag senators_path, :method => :get do %>
+  <!-- = label_tag :state %>
+  = text_field_tag :state %>
+
+
+  = submit_tag "Search" %> -->
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %> 

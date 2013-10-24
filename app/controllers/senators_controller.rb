@@ -1,15 +1,16 @@
 class SenatorsController < ApplicationController
 
-  def new
-    render :new
+  def index
+    @senator = Senator.where(state: params[:search])
+    binding.pry
+    render :index
   end
 
 
-  end
 
-  def show
-    # @senator = Senator.find(params[:id])
-    render :show
-  end
+  # def show
+  #   @senator = Senator.find(params[:id])
+  #   render :show
+  # end
 
 end
