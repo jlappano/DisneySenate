@@ -34,18 +34,29 @@
 
 <div class="votes">
   <ul>
-    <h3>Your Senator voted <%= @vote_1 %> on</h3>
+    <div class="vote">
+    <h3><%=@senator.first_name + " " + @senator.last_name%> voted <%= @vote_1 %> on</h3>
         <ul><a href="http://beta.congress.gov/bill/113th/house-bill/2775">H.R.2775 - Continuing Appropriations Act, 2014</a></ul>
             <p>The final version of the bill makes continuing appropriations through January 15, 2014, thus ending the government shutdown, and increases the debt limit through February 7, 2014.</p>
-      <h3>Your Senator voted <%= @vote_2 %> on</h3>
+      </div>
+
+      <div class="vote">
+      <h3><%=@senator.first_name + " " + @senator.last_name%> voted <%= @vote_2 %> on</h3>
         <ul> <a href="http://beta.congress.gov/bill/113th-congress/senate-bill/744?q=%7B%22search%22%3A%5B%22s.+744%22%5D%7D">S.744 - Border Security, Economic Opportunity, and Immigration Modernization Act</a> </ul>
             <p>States that passage of this Act recognizes that the primary tenets of its success depend on securing U.S. sovereignty and establishing a coherent and just system for integrating those who seek to join American society.</p>
-      <h3>Your Senator voted <%= @vote_3%> on</h3>
+      </div>
+
+      <div class="vote">
+      <h3><%=@senator.first_name + " " + @senator.last_name%> voted <%= @vote_3%> on</h3>
           <ul>  <a href="http://beta.congress.gov/amendment/113th-congress/senate-amendment/931?q={">Amendment SA 931 on S.954</a> </ul>
             <p>To strike a reduction in the supplemental nutrition assistance program, with an offset that limits crop insurance reimbursements to providers.</p>
-      <h3>Your Senator voted <%= @vote_4%> on</h3>
+      </div>
+
+      <div class="vote">
+      <h3><%=@senator.first_name + " " + @senator.last_name%> voted <%= @vote_4%> on</h3>
           <ul> <a href="http://beta.congress.gov/amendment/113th-congress/senate-amendment/805?q={">Amendment SA 805 on S.799</a> </ul>
             <p>To protect the right of individuals to bear arms at water resources development projects administered by the Secretary of the Army.</p>
+      </div>
   </ul>
 </div>
 

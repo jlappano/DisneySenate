@@ -7,7 +7,7 @@ class SenatorsController < ApplicationController
   end
 
   def search
-    @senator = Senator.find_by(state: params[:search].to_s.upcase)
+    @senator = Senator.find_by(state: params[:state])
     
     if @senator.nil?
       render :index

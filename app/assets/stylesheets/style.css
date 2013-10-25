@@ -9,8 +9,15 @@ p, li, h3{
   padding-left: 30px;
 
 }
+h3{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 1.2em;
+  padding: 0px;
+  line-height:40%;
+}
 
-h1, ul, a{
+
+h1, h2, ul, a{
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -31,9 +38,6 @@ span {
   font-weight: bold;
 }
 
-h3{
-  font-size: 1.3em; 
-}
 
 .votes {
   text-align: left;
@@ -46,4 +50,8 @@ h3{
 
 .disney-wrapper {
   max-width: 750px;
+}
+
+.vote {
+  padding: 15px;
 }
