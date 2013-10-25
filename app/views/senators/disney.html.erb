@@ -1,12 +1,12 @@
 <div class= "disney_wrapper">
 <ul>
-  <li><span>Name:</span> <%= @disney_character_info.character_name %></li>
   <li><img src="<%= @disney_character_info.img_url %>">
+  <li><span>Name:</span> <%= @disney_character_info.character_name %></li>
   <li><span>Quote:</span> <%= @disney_character_info.quote %></li>
 </ul>
 
 
-<h2>Check out how your Senator voted on these issues:</h2>
+<h3>Check out how your Senator voted on these issues:</h2>
 
 <%= render 'votes' %>
 

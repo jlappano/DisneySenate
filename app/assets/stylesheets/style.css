@@ -2,7 +2,7 @@ body{
   text-align: center;
 }
 
-p, li{
+p, li, h3{
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 1.2em;
   padding-right: 30px;
@@ -10,7 +10,7 @@ p, li{
 
 }
 
-h1, ul{
+h1, ul, a{
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -23,7 +23,8 @@ img {
 }
 
 a {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin-left: 30px;
 }
 
 span {
