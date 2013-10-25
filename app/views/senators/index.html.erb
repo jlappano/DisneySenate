@@ -1,10 +1,10 @@
-<div class="home_wrapper">
+<div class="home-wrapper">
 <h1>Welcome to the Magical World of the U.S. Senate</h1>
 <p>Sometimes our politicians seem more like cartoon characters than the selfless cogs
 of democracy that we hope them to be. Enter a two-character state key to see the Senior Senator which represents it. Make a wish on the second star on the right... and explore the Disney Dopplegangers. </p>
 
 <%= form_tag search_senators_path, :method => :get do %>
-  <%= text_field_tag :search, params[:search] %>
+  <%= text_field_tag :search, params[:search].to_s.upcase %>
   <%= submit_tag "Search" %>
 <% end %>
 
