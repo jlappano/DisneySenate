@@ -1,4 +1,4 @@
-<div class= "disney_wrapper">
+
 <ul>
   <li><img src="<%= @disney_character_info.img_url %>">
   <li><span>Name:</span> <%= @disney_character_info.character_name %></li>
@@ -8,9 +8,12 @@
 
 <h3>Check out how your Senator voted on these issues:</h2>
 
+<div class= "disney-wrapper">
+
 <%= render 'votes' %>
 
-<%= link_to "Search Again!", root_path %>
 </div>
+<%= link_to "Search Again!", root_path %>
+
 
 
